@@ -9,11 +9,8 @@ struct Point {
 };
 
 int main() {
-    ios_base::sync_with_stdio(false);
-    cin.tie(NULL);
-
     int R, C;
-    if (!(cin >> R >> C)) return 0;
+    cin >> R >> C;
 
     vector<vector<int>> grid(R, vector<int>(C));
     for (int i = 0; i < R; ++i) {
@@ -26,11 +23,10 @@ int main() {
     cin >> SR >> SC >> FR >> FC;
 
     vector<vector<int>> dist(R, vector<int>(C, -1));
-
     queue<Point> q;
 
     q.push({SR, SC});
-    dist[SR][SC] = 0; 
+    dist[SR][SC] = 0;
 
     int dr[] = {-1, 1, 0, 0};
     int dc[] = {0, 0, -1, 1};

@@ -32,9 +32,6 @@ void postorder(const RedBlackTree::Node* node, const RedBlackTree::Node* nilNode
 }
 
 int main() {
-    ios_base::sync_with_stdio(false);
-    cin.tie(NULL);
-
     int N;
     if (!(cin >> N)) return 0;
 
