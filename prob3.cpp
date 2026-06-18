@@ -49,7 +49,6 @@ int main() {
 
             if (next_r >= 0 && next_r < R && next_c >= 0 && next_c < C) {
                 if (grid[next_r][next_c] == 0 && dist[next_r][next_c] == -1) {
-                    // Update jarak dan masukkan ke antrean
                     dist[next_r][next_c] = dist[curr.r][curr.c] + 1;
                     q.push({next_r, next_c});
                 }
